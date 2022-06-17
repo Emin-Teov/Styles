@@ -36,9 +36,9 @@ body{
 }
 
 .styles-2d:hover{
-    box-shadow: 0 0 15px #c155b3;
+    box-shadow: 0 0 25px #2fea0a;
     transform: scale(1.05, 1.05);
-    
+    background: linear-gradient(to bottom right, #d636c0 20%, #1e1eb9 40%, #f8f81a);
 }
 
 @keyframes are3d{
