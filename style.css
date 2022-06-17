@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-item{
+    width: 25vw;
+    height: 45vh;
+    border-radius: 1vmax;
+}
+
+.styles-3d{
+    transition: transform 1s ease;
+    animation: are3d 2.5s linear infinite alternate;
+}
+
+.styles-3d:hover{
+    box-shadow: -6px -6px 0px #00d4ff;
+    transform: skew(4deg);
+    animation: are3d 1.8s steps() infinite 
+}
+
+.styles-2d{
+    background: linear-gradient(to bottom right, #f8f81a, #1e1eb9, #d636c0);
+    transition: all 1s ease-in;
+}
+
+.styles-2d:hover{
+    box-shadow: 0 0 15px #c155b3;
+    transform: scale(1.05, 1.05);
+    
+}
+
+@keyframes are3d{
+    0%{
+        background: radial-gradient(#020024 0%, #090979 35%, #00d4ff 100%);
+    }
+    5%{
+        background: radial-gradient(#020024 0%, #090979 36%, #00d4ff 100%);
+    }
+    10%{
+        background: radial-gradient(#020024 0%, #090979 37%, #00d4ff 100%);
+    }
+    15%{
+        background: radial-gradient(#020024 0%, #090979 38%, #00d4ff 100%);
+    }
+    20%{
+        background: radial-gradient(#020024 0%, #090979 39%, #00d4ff 100%);
+    }
+    25%{
+        background: radial-gradient(#020024 0%, #090979 40%, #00d4ff 100%);
+    }
+    75%{
+        background: radial-gradient(#020024 0%, #090979 40%, #00d4ff 100%);
+    }
+    80%{
+        background: radial-gradient(#020024 0%, #090979 39%, #00d4ff 100%);
+    }
+    85%{
+        background: radial-gradient(#020024 0%, #090979 38%, #00d4ff 100%);
+    }
+    90%{
+        background: radial-gradient(#020024 0%, #090979 37%, #00d4ff 100%);
+    }
+    95%{
+        background: radial-gradient(#020024 0%, #090979 36%, #00d4ff 100%);
+    }
+    100%{
+        background: radial-gradient(#020024 0%, #090979 35%, #00d4ff 100%);
+    }
+}
+
+/* .styles-3d::before{
+    box-shadow: 0px 0px 15px linear-gradient(#020024 0%, #090979 35%, #00d4ff 100%);;;
+} */
