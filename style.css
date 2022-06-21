@@ -17,7 +17,7 @@ body{
     width: 25vw;
     height: 45vh;
     border-radius: 1vmax;
-}
+}  
 
 .styles-3d{
     transition: transform 1s ease;
@@ -25,9 +25,9 @@ body{
 }
 
 .styles-3d:hover{
-    box-shadow: -6px -6px 0px #00d4ff;
+    box-shadow: -6px -6px 0 #00d4ff;
     transform: skew(14deg);
-    animation: are3d 1.8s steps() infinite 
+    animation: are3d 1.8s ease infinite;
 }
 
 .styles-2d{
@@ -39,6 +39,7 @@ body{
     box-shadow: 0 0 25px #2fea0a;
     transform: scale(1.05, 1.05);
     background: linear-gradient(to bottom right, #d636c0 20%, #1e1eb9 40%, #f8f81a);
+    animation: are2d 1.3s ease 1s 1;
 }
 
 @keyframes are3d{
@@ -77,5 +78,20 @@ body{
     }
     100%{
         background: radial-gradient(#020024 0%, #090979 35%, #00d4ff 100%);
+    }
+}
+
+@keyframes are2d{
+    0%{
+        transform: rotate(0deg) scale(1.05, 1.05);
+    }
+    25%{
+        transform: rotate(5deg) scale(1.05, 1.05);
+    }
+    75%{
+        transform: rotate(-5deg) scale(1.05, 1.05);
+    }
+    100%{
+        transform: rotate(0deg) scale(1.05, 1.05);
     }
 }
