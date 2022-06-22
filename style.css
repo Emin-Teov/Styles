@@ -22,22 +22,26 @@ body{
 .styles-3d{
     transition: all 1s ease;
     animation: are3d 2.5s linear infinite alternate;
+    opacity: .9;
 }
 
 .styles-3d:hover{
     box-shadow: -6px -6px 0 #00d4ff;
     transform: skew(14deg) scale(1.1, 1.1);;
+    opacity: 1;
     animation: are3d 1.8s ease infinite;
 }
 
 .styles-2d{
     background: linear-gradient(to bottom right, #f8f81a 20%, #1e1eb9 40%, #d636c0);
     transition: all 1s ease-in;
+    opacity: .7;
 }
 
 .styles-2d:hover{
     box-shadow: 0 0 25px #2fea0a;
     transform: scale(1.05, 1.05);
+    opacity: 1;
     background: linear-gradient(to bottom right, #d636c0 20%, #1e1eb9 40%, #f8f81a);
     animation: are2d .6s ease 1s 1;
 }
